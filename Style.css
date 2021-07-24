@@ -1,0 +1,793 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+.maximum-width {
+    max-width: 1300px;
+    margin: auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Begain with css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+.header {
+    background-color: #fff;
+    text-align: center;
+    color: black !important;
+    padding: 6px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.header img {
+    width: 45px;
+    float: left;
+    margin-left: 10px;
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 45px;
+    float: left;
+    margin-left: 5px;
+}
+
+.header .logo {
+    width: 30%;
+}
+
+.header .logo a {
+    display: block;
+    transition: 0.2s ease-in;
+}
+
+.header .logo a span:hover {
+    opacity: 0.5;
+}
+
+
+.header .menu {
+    width: 55%;
+    text-align: left;
+}
+
+.header .menu ul {
+    line-height: 50px;
+}
+
+.header .menu ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.header .menu ul li a {
+    display: block;
+    font-size: 1rem;
+}
+
+.header .menu ul li:hover>a {
+    color: #6278df;
+}
+
+
+.header .button {
+    width: 10%;
+
+}
+
+.header .button a {
+    display: block;
+    border: 2px solid #6278df;
+    padding: 10px;
+    border-radius: 10px;
+    color: #6278df;
+    font-weight: 600;
+    transition: .2s ease-in;
+}
+
+.header .button a:hover {
+    color: #fff;
+    background: #6278df;
+}
+
+
+/* Drop Down Css */
+.header .menu ul li ul {
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 100%;
+    line-height: 20px !important;
+    display: block;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .menu ul li ul li {
+    display: inline-block;
+    width: 230px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.header .menu ul li ul li a {
+    display: block;
+    padding: 15px 0px;
+    color: rgb(0, 0, 0) !important;
+}
+
+.header .menu ul li ul li:hover>a {
+    color: #6278df !important;
+}
+
+.header .menu ul li i {
+    position: absolute;
+    top: 0;
+    line-height: 47px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* Hover to visible */
+.header ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+
+/* Slider Css*/
+.slider {
+    text-align: center;
+    background-image: url(./img/mbr-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 170px 0px;
+    position: relative;
+    color: #fff !important;
+    z-index: 0;
+    margin-top: 60px;
+}
+
+.slider::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.slider p {
+    font-size: 1.5rem;
+}
+
+.slider h1 {
+    font-size: 4rem;
+    margin: 30px 0px;
+}
+
+.slider h1,
+.slider p {
+    color: #fff;
+    z-index: 1000;
+}
+
+.slider .button-all {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+
+.slider .button-all .btn-1 {
+    color: gray;
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.slider .btn-2 {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #fff;
+    text-align: center;
+    color: gray;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.slider .button-all a {
+    color: gray;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.slider .btn-1 i {
+    font-size: larger;
+}
+
+.slider .btn-2 i {
+    font-size: larger;
+}
+
+.slider .button-all .btn-1:hover {
+    color: #fff !important;
+    background-color: #6278df;
+}
+
+.slider .button-all .btn-1:hover a {
+    color: #fff !important;
+    background-color: #6278df;
+}
+
+.slider .button-all .btn-2:hover {
+    color: #fff !important;
+    background-color: #6278df;
+}
+
+.slider .button-all .btn-2:hover a {
+    color: #fff !important;
+    background-color: #6278df;
+}
+
+.slider-end {
+    background-color: #f7f9ff;
+    padding: 50px 0px;
+}
+
+.slider-end .slider-left {
+    float: left;
+    width: 48%;
+}
+
+.slider-end .slider-right {
+    float: right;
+    width: 48%;
+}
+
+.slider-end .slider-right h1 {
+    font-weight: 400;
+    word-spacing: 8px;
+    font-size: 3rem;
+}
+
+.slider-end .slider-right p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+
+/* Services Start */
+.service {
+    padding: 100px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.service .service-content h2 {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.service .service-content p {
+    font-size: 25px;
+    color: gray;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+/* Services Items */
+.services {
+    margin-top: 70px;
+}
+
+.service-item {
+    width: 31%;
+    text-align: left;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0.001, 0.09);
+    margin-right: 2%;
+    margin-bottom: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.service-item:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+
+.service-item .s-icon i {
+    float: left;
+    color: #6278df;
+    font-size: 40px;
+    line-height: 20px;
+    width: 90px;
+    height: 130px;
+    line-height: 38px;
+}
+
+.service-item .s-content h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.service-item .s-content p {
+    color: #767676;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+
+}
+
+/* Pricing Section */
+.priceing-section {
+    padding: 100px 0;
+    background-color: #f7f9ff;
+
+}
+
+.section-title {
+    text-align: center;
+    line-height: 90px;
+}
+
+.priceing-section .section-title h2 {
+    font-size: 60px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.priceing-section .section-title p {
+    font-size: 25px;
+    color: gray;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.priceing-section .pricing-item {
+    width: 31%;
+    margin-right: 2%;
+    background-color: #fff;
+    box-shadow: 4px 5px 30px 0 rgba(98, 120, 223, 0.3);
+    border-radius: 5px;
+}
+
+.priceing-section .pricing-item .pricing-hedding {
+    border-bottom: 1px solid #000000;
+    padding: 30px 20px;
+    line-height: 70px;
+    box-sizing: border-box;
+    transition: 0.5s ease-in;
+}
+
+.priceing-section .pricing-item:hover .pricing-hedding {
+    background-color: #6278df;
+    color: #fff;
+}
+
+
+
+.priceing-section .pricing-item .pricing-hedding h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 3em;
+}
+
+.priceing-section .pricing-item .pricing-hedding h2 {
+    line-height: 68px;
+}
+
+.priceing-section .pricing-item .pricing-hedding h2 span {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.priceing-section .pricing-item .pricing-hedding h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.priceing-section .pricing-item .pricing-hedding p {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+
+.priceing-section .pricing-item .pricing-body {
+    line-height: 20px;
+    padding: 50px 0;
+}
+
+.priceing-section .pricing-item .pricing-body ul {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 30px;
+}
+
+.priceing-section .pricing-item .pricing-body ul li {
+    list-style: none;
+    line-height: 56px;
+    color: #767676;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.priceing-section .pricing-item .pricing-body ul li i {
+    color: #6278df;
+    font-size: 30px;
+}
+
+.pricing-item .btn-1 {
+    color: #5976f5;
+    display: inline-block;
+    padding: 15px 15px;
+    background-color: #f8f8f8;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    box-shadow: 4px 5px 30px 0 rgba(64, 71, 99, 0.6);
+    font-weight: 500;
+    font-size: 23px;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.priceing-section .pricing-item:hover .btn-1 {
+    color: #fff;
+    background-color: #6278df;
+}
+
+.priceing-section .btn-1:hover {
+    background-color: black !important;
+}
+
+/* Team Section */
+
+.team {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.team h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.member {
+    width: 23%;
+    margin-right: 2%;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+
+
+
+.member img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.member .member-bio {
+    padding: 30px 20px;
+}
+
+.member-bio h3 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.member-bio h4 {
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 10px;
+    color: #767676;
+}
+
+/* Newslater */
+.newslater {
+    padding: 100px 0px;
+    background-color: #f7f9ff;
+}
+
+
+.newslater-text h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+.newslater-text h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px 10px;
+}
+
+.default-input {
+    width: 355px;
+    padding: 20px 20px;
+    font-size: 20px;
+    border: 1px solid #b0b0b1;
+    font-weight: 100;
+    border-radius: 10px;
+    color: #767676;
+    transition: 0.5s ease-in;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.default-input:focus {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.7);
+
+}
+
+.submit-btn {
+    padding: 18px 20px;
+    font-size: 20px;
+    width: 200px;
+    color: #ffffff;
+    background-color: #6278df;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 2px solid #5976f5;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.7);
+}
+
+.submit-btn:hover {
+    background-color: #fff;
+    color: #5976f5;
+}
+
+
+/* Blog Css */
+.blog-section {
+    padding: 50px 0;
+}
+
+.blog-section .blog-title {
+    padding: 50px 0px;
+}
+
+.blog-section .blog-title .b-heading {
+    width: 50%;
+}
+
+.blog-section .blog-title .b-heading h2 {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.blog-section .blog-title .b-content p {
+    color: gray;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.blog-section .blog-title .b-content {
+    width: 50%;
+}
+
+.blog-section .blog-item img {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.blog-section .blog-item h2 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 117px;
+}
+
+.blog-section .blog-item p {
+    color: gray;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.blog-section .blog-item .b-item1 {
+    width: 48%;
+    margin-right: 2%;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+    background-color: #fff;
+}
+
+.blog-section .blog-item .b-item2 {
+    width: 48%;
+    margin-right: 2%;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    background-color: #fff;
+}
+
+/* Review Css */
+.testomonial-section {
+    padding: 50px 0;
+    background-color: #f7f9ff;
+}
+
+.testomonial-section .section-title {
+    line-height: 0;
+}
+
+.testomonial-section .section-title p {
+    font-size: 25px;
+    font-weight: 300;
+    color: gray;
+}
+
+.testomonial-section .section-title h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 120px;
+}
+
+.testimonial-items .t-item {
+    width: 31%;
+    margin-right: 2%;
+    position: relative;
+}
+
+.testimonial-items .t-content {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+    color: gray;
+    box-shadow: 4px 5px 30px 0 rgba(0, 0, 0.001, 0.09);
+    border-radius: 5px;
+    padding: 60px;
+    background-color: #fff;
+}
+
+.t-content::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    bottom: -14px;
+}
+
+.testimonial-items .t-item:nth-child(3) {
+    margin-right: 0;
+}
+
+.testimonial-items .t-user {
+    clear: both;
+    width: 280px;
+    margin: 30px auto;
+}
+
+.testimonial-items .t-user img {
+    border-radius: 50%;
+    float: left;
+    width: 70px;
+    margin: auto 20px;
+}
+
+.t-user h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.t-user p {
+    font-weight: 400;
+    color: gray;
+}
+
+.t-content {
+    position: relative;
+}
+
+.t-content i {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 60px;
+    opacity: 0.3;
+}
+
+/*Contact & Footer css */
+.contact-section {
+    padding: 80px 0;
+}
+
+.content-left-map {
+    width: 40%;
+}
+
+.w50 {
+    width: 45%;
+    margin: 10px 10px !important;
+}
+
+.w100 {
+    width: 90% !important;
+    margin: 10px 10px;
+}
+
+.content-right-form {
+    width: 40%;
+}
+
+.content-right-form h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.content-right-form p {
+    font-size: 23px;
+    font-weight: 300;
+    color: #767676;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+
+.footer {
+    margin-top: 80px;
+    font-size: 20px;
+}
